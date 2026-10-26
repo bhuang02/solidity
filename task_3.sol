@@ -21,6 +21,6 @@ contract ProposalContract {
     function create(string calldata _description, string calldata _title, uint256 _total_vote_to_end) external {
             counter += 1;
             proposal_history[counter] = Proposal(_description, 0, 0, 0, _total_vote_to_end, false, true, _title);
-}
+    }
 
 }
